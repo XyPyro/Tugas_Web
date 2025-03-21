@@ -1,15 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Steephen.Parnaehan.Situmeang</title>
+    <title>Biodata_Steephen</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-image: url(Asset/Stand\ Up\ Reaction.gif);
+            background-size: cover;
+        }
+        h1 {
+            color: #5b5b5b;
+            text-align: center;
+        }
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 16px;
+            overflow: hidden;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #000000;
+            text-align: left;
+        }
+        th {
+            background-color: #330eb9;
+            color: rgb(0, 0, 0);
+        }
+        .no-hover {
+                background-color: transparent !important;
+                pointer-events: none;
+        }
+        tr:hover > td:not(.no-hover) {
+                background-color: white;
+        }
+        img {
+            width: 50%;
+            height: auto;
+            display: block;
+            margin: auto;
+            border: 2px solid #330eb9;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        img:hover {
+            transform: scale(1.05);
+        }
+        .button {
+            display: inline-block;
+            background-color: #000000;
+            color: white (0, 0, 0) (255, 255, 255);
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            margin: 20px auto; 
+        }
+        .button:hover {
+            background-color: #000000;
+        }
+        .button-container {
+            text-align: center;
+        }
+        
+    </style>
 </head>
 <body>
-    <h1 style="font-size:1.80rem;">Bio Data Diri:</h1>
-    <p style="font-size:1.20rem;">Nama:Steephen.Parnehan.Situmeang</p>
-    <p style="font-size:1.20rem;">Alamat:Jln.Setialuhur Gg.Bonsai</p>
-    <P style="font-size:1.20rem;">Tempat dan Tgl Lahir:Medan,29 September 2005</P>
-    <P style="font-size:1.20rem;">Hobi:Bermain Game Mobile Dan Emulator</P>
+    <h1>Biodata Mahasiswa</h1>
+    <table>
+        <tr>
+            <th colspan="3">Detail</th>
+        </tr>
+        <tr>
+            <td>Nama</td>
+            <td>Steephen.Parnaehan.Situmeang</td>
+        </tr>
+        <tr>
+            <td>NIM</td>
+            <td>2403310755</td>
+        </tr>
+        <tr>
+            <td>Fakultas</td>
+            <td>Teknologi dan Ilmu Komputer</td>
+        </tr>
+        <tr>
+            <td>Prodi</td>
+            <td>S1 Informatika</td>
+        </tr>
+    </table>
+    <div class="button-container">
+        <a href="https://www.youtube.com/watch?v=mWcaAZzv3ms" class="button">Link</a>
+    </div>
 </body>
 </html>
