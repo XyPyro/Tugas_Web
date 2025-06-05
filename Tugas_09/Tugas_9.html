@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi Bilangan</title>
+    <style>
+        body {
+             font-family: Arial, sans-serif;
+             height: 100vh;
+             margin: 0;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             flex-direction: column;
+             background-image: url('Asset/Background_mtk.jpeg');
+             background-size: cover;
+             color: #000000;
+         }
+
+         .form-group {
+             display: flex;
+             gap: 10px;
+         }
+
+         input, button {
+             padding: 10px;
+             font-size: 15px;
+             color: #000000;
+             background-color: #ffffff;
+             border: 1px solid #555;
+         }
+
+         input::placeholder {
+              color: #AAAAAA;
+         }
+
+    </style>
+</head>
+<body>
+     <h1>Konversi Bilangan</h1>
+     <div class="form-group">
+     <input type="text" id="inputAngka" placeholder="Masukkan Bilangan Desimal">
+     <button onclick="konversiBilangan()">Konversi</button>
+</div>
+
+    <script>
+        function konversiBilangan() {
+            const input = document.getElementById("inputAngka").value;
+            const angka = parseInt(input);
+
+            if (isNaN(angka)) {
+                alert("Masukkan Angka yang benar!");
+                return;
+            }
+
+            const biner = angka.toString(2);
+            const oktal = angka.toString(8);
+            const heksadesimal = angka.toString(16).toUpperCase();
+
+            alert(`Biner : ${biner}\nOktal : ${oktal}\nHeksadesimal : ${heksadesimal}`);
+        }
+    </script>
+</body>
+</html>
